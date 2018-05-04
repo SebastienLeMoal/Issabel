@@ -40,5 +40,5 @@ dbPasswd=$(cat /etc/amportal.conf | grep AMPDBPASS | cut -d"=" -f2)
 #echo -e "Installation du module CustomContexts [ $vert OK $default ]"
 
 # Configuration du module customcontexts
-mysql -uroot -p$dbPasswd asterisk < /scripts/customcontexts.sql
+mysql -uroot -p$dbPasswd asterisk < /etc/custom/templates/customcontexts.sql
 echo -e "Import de la configuration du module CustomContexts [ $vert OK $default ]"
